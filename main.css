@@ -1,0 +1,29 @@
+*{
+    background-color:wheat;
+}
+.container{
+    display: grid;
+    grid-gap: 1.5em;
+    padding: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+    grid-template-areas: "header header . sidebar"
+    "main content main content . sidebar"
+    "footer footer footer footer";
+} 
+.header{
+    grid-template-columns: 1/4;
+    grid-template-rows: 1/2;
+}
+.main content{
+    grid-template-columns: 2/3;
+    grid-template-rows: 2/3;
+}
+.sidebar{
+    grid-template-columns: 3/4;
+    grid-template-rows: 2/3;
+}
+.header{
+    grid-template-columns: 1/4;
+    grid-template-rows: 3;
+}
